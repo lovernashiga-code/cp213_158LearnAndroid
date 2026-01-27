@@ -19,7 +19,7 @@ class MainActivity2 : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             LabTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                Scaffold( modifier = Modifier.fillMaxSize() ) { innerPadding ->
                     Greeting2(
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
