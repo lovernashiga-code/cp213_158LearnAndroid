@@ -10,8 +10,12 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.lab.ui.theme.LabTheme
@@ -21,30 +25,31 @@ class MainActivity2 : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-      //      LabTheme {
+            LabTheme {
                 Scaffold( modifier = Modifier.fillMaxSize() ) { innerPadding ->
                     Greeting2(
                         name = "Android2",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
-    //        }
+           }
         }
     }
 }
 
 @Composable
 fun Greeting2(name: String, modifier: Modifier = Modifier) {
-    val InputText by remember { mutableStateOf( "") }
-    Column{
+    var inputText by remember { mutableStateOf("") }
+
+    Column {
         Text(
-            text = "Hello $name! Say = . . . . ",
+            text = "Hello $name! Say = "+inputText,
             modifier = modifier
         )
         TextField(
-            value = "InputText" ,
-            onValueChange = {it ->
-                InputText = it
+            value = inputText ,
+            onValueChange = {
+                inputText = it
             }
         )
     }
