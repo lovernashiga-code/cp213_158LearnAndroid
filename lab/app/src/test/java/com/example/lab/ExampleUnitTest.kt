@@ -1,4 +1,4 @@
-package com.example.a158learnandroid
+package com.example.lab
 
 import org.junit.Test
 

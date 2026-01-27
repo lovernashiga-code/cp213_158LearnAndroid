@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "158LearnAndroid"
+rootProject.name = "lab"
 include(":app")
  

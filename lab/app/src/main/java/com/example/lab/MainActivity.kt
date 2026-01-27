@@ -1,4 +1,4 @@
-package com.example.a158learnandroid
+package com.example.lab
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,14 +11,14 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.a158learnandroid.ui.theme._158LearnAndroidTheme
+import com.example.lab.ui.theme.LabTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            _158LearnAndroidTheme {
+            LabTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
                         name = "Android",
@@ -41,7 +41,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    _158LearnAndroidTheme {
+    LabTheme {
         Greeting("Android")
     }
 }
