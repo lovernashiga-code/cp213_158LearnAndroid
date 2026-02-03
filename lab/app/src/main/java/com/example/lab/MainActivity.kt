@@ -73,7 +73,10 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween
                 ){
-                        Column {
+                        Column (
+                                horizontalAlignment = Alignment.CenterHorizontally
+                        ){
+
 
                             Button(onClick = {
                                 str= str + 1
@@ -94,7 +97,9 @@ class MainActivity : ComponentActivity() {
                                 )
                             }
                         }
-                        Column {
+                        Column (
+                            horizontalAlignment = Alignment.CenterHorizontally
+                        ){
                             Button(onClick = {
                                 agi = agi + 1
                             }) {
@@ -114,7 +119,9 @@ class MainActivity : ComponentActivity() {
                                 )
                             }
                         }
-                        Column {
+                        Column (
+                            horizontalAlignment = Alignment.CenterHorizontally
+                        ){
                             Button(onClick = {
                                 int = int + 1
                             }) {
