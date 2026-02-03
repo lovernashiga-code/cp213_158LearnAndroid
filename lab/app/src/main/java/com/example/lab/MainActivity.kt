@@ -74,6 +74,7 @@ class MainActivity : ComponentActivity() {
                     horizontalArrangement = Arrangement.SpaceBetween
                 ){
                         Column {
+
                             Button(onClick = {
                                 str= str + 1
                             }) {
