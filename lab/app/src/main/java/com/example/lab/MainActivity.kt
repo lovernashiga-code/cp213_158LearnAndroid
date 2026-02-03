@@ -1,5 +1,7 @@
 package com.example.lab
 
+import android.app.ListActivity
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -55,6 +57,9 @@ class MainActivity : ComponentActivity() {
                             .fillMaxWidth(fraction = 0.55f)
                             .background(color = Color.Red)
                             .padding(8.dp)
+                            .clickable {
+                                startActivity(Intent(this@MainActivity,ListActivity::class.java))
+                            }
                     )
                 }
                 //image
