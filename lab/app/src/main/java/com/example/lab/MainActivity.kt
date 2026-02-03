@@ -57,9 +57,7 @@ class MainActivity : ComponentActivity() {
                             .fillMaxWidth(fraction = 0.55f)
                             .background(color = Color.Red)
                             .padding(8.dp)
-                            .clickable {
-                                startActivity(Intent(this@MainActivity,ListActivity::class.java))
-                            }
+
                     )
                 }
                 //image
@@ -70,6 +68,9 @@ class MainActivity : ComponentActivity() {
                         .size(350.dp)
                         .align(Alignment.CenterHorizontally)
                         .padding(top = 16.dp)
+                        .clickable {
+                            startActivity(Intent(this@MainActivity,litActivity3::class.java))
+                        }
                 )
                 var str by remember { mutableStateOf(10) }
                 var agi by remember { mutableStateOf(15) }
