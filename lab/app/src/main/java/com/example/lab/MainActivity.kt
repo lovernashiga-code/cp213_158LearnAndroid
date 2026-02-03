@@ -73,51 +73,69 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween
                 ){
-                    Row {
-                        Button(onClick = {
-                            str = str + 1
-                        }) {
-                            Text(text = "+", fontSize = 32.sp)
-                        }
-
                         Column {
-                            Text(text = "+", fontSize = 32.sp)
+                            Button(onClick = {
+                                str= str + 1
+                            }) {
+                                Image(
+                                    painter = painterResource(R.drawable.baseline_arrow_drop_up_24),
+                                    contentDescription = "up"
+                                )
+                            }
                             Text(text = "str", fontSize = 32.sp)
                             Text(text = str.toString(), fontSize = 32.sp)
-                            Text(
-                                text = "-",
-                                fontSize = 32.sp,
-                                modifier = Modifier.clickable {
-                                    str = str - 1
-                                }
-                            )
-                        }
-                        Button(onClick = {
-                            agi = agi + 1
-                        }) {
-                            Text(text = "+", fontSize = 32.sp)
+                            Button(onClick = {
+                                str= str - 1
+                            }) {
+                                Image(
+                                    painter = painterResource(R.drawable.outline_arrow_drop_down_24),
+                                    contentDescription = "down"
+                                )
+                            }
                         }
                         Column {
-                            Text(text = "+", fontSize = 32.sp)
+                            Button(onClick = {
+                                agi = agi + 1
+                            }) {
+                                Image(
+                                    painter = painterResource(R.drawable.baseline_arrow_drop_up_24),
+                                    contentDescription = "up"
+                                )
+                            }
                             Text(text = "agi", fontSize = 32.sp)
                             Text(text = agi.toString(), fontSize = 32.sp)
-                            Text(text = "-", fontSize = 32.sp)
-                        }
-                        Button(onClick = {
-                            int = int + 1
-                        }) {
-                            Text(text = "+", fontSize = 32.sp)
+                            Button(onClick = {
+                                agi = agi - 1
+                            }) {
+                                Image(
+                                    painter = painterResource(R.drawable.outline_arrow_drop_down_24),
+                                    contentDescription = "down"
+                                )
+                            }
                         }
                         Column {
-                            Text(text = "+", fontSize = 32.sp)
+                            Button(onClick = {
+                                int = int + 1
+                            }) {
+                                Image(
+                                    painter = painterResource(R.drawable.baseline_arrow_drop_up_24),
+                                    contentDescription = "up"
+                                )
+                            }
                             Text(text = "int", fontSize = 32.sp)
                             Text(text = int.toString(), fontSize = 32.sp)
-                            Text(text = "-", fontSize = 32.sp)
+                            Button(onClick = {
+                                int = int - 1
+                            }) {
+                                Image(
+                                    painter = painterResource(R.drawable.outline_arrow_drop_down_24),
+                                    contentDescription = "down"
+                                )
+                            }
                         }
-                        
+
                 }
             }
         }
     }
-}
 }
