@@ -15,7 +15,7 @@ import com.example.lab.ui.theme.LabTheme
 import com.example.lab.utils.SharedPreferencesUtil
 
 class SharedPreferencesActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+      override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         SharedPreferencesUtil.init(this)
         // การบันทึกค่า (เช่น เมื่อกดปุ่ม Save)
