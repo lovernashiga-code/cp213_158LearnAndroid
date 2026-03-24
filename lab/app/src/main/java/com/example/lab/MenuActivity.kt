@@ -40,6 +40,16 @@ class MenuActivity : ComponentActivity() {
                 }) {
                     Text("LifeCycleComposeActivity")
                 }
+                Button(onClick = {
+                    startActivity(Intent(this@MenuActivity, GalleryActivity::class.java))
+                }) {
+                    Text("GalleryActivity")
+                }
+                Button(onClick = {
+                    startActivity(Intent(this@MenuActivity, SensorActivity::class.java))
+                }) {
+                    Text("SensorActivity")
+                }
             }
         }
     }

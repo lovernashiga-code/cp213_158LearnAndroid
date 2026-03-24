@@ -57,6 +57,8 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     implementation("io.coil-kt:coil-compose:2.7.0")
+    // Location services API
+    implementation("com.google.android.gms:play-services-location:21.2.0")
 
     // Retrofit สำหรับคุยกับ Server
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
