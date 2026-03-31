@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.android)
+    id("com.google.gms.google-services") version "4.4.2" apply false
 }
 
 android {
@@ -50,6 +51,8 @@ dependencies {
     implementation(libs.androidx.compose.material3)
     implementation(libs.core.ktx)
     testImplementation(libs.junit)
+    testImplementation(libs.mockk)
+    testImplementation(libs.kotlinx.coroutines.test)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
@@ -66,4 +69,8 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     // Lifecycle & ViewModel สำหรับ Compose
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0")
+
+    // Firebase
+    implementation(platform("com.google.firebase:firebase-bom:33.9.0"))
+    implementation("com.google.firebase:firebase-firestore")
 }

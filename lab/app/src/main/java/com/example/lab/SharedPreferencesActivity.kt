@@ -10,10 +10,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.lab.ui.theme.Lab
+import com.example.lab.ui.theme.LabTheme
 import androidx.activity.ComponentActivity
 import com.example.lab.utils.SharedPreferencesUtil
-import com.example.lab.ui.utils.SharedPreferencesUtil
 
 class SharedPreferencesActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,11 +24,11 @@ class SharedPreferencesActivity : ComponentActivity() {
 
         // การดึงค่ามาใช้งาน (เช่น เมื่อเปิดแอพขึ้นมาใหม่)
         val name = SharedPreferencesUtil.getString("user_name")
-        val darkMode = SharedPreferencesUtil.getBoolean("is_dark_mode")
+        // val darkMode = SharedPreferencesUtil.getBoolean("is_dark_mode")
 
         enableEdgeToEdge()
         setContent {
-            LabLearnAndroidTheme {
+            LabTheme {
                 Scaffold( modifier = Modifier.fillMaxSize() ) { innerPadding ->
                     Greeting(
                         name = name,
@@ -52,7 +51,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    Lab {
+    LabTheme {
         Greeting("Android")
     }
 }
