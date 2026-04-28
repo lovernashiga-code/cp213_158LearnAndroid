@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/star_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_stats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HP: 10/10 | FLOOR: 1"
+            android:textColor="#FF5555"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:shadowColor="#FF0000"
+            android:shadowRadius="5" />
+
+        <TextView
+            android:id="@+id/tv_inventory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎒 [ว่าง]"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:layout_marginTop="4dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:background="#CC1A1A1A"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="คุณตื่นขึ้นมาในคุกมืด..."
+                android:textColor="#00FF00"
+                android:textSize="20sp"
+                android:fontFamily="monospace" />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <Button android:id="@+id/btn_choice1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="เปิดประตู"
+                android:fontFamily="monospace"
+                android:backgroundTint="#333333"
+                android:textColor="#00FF00"
+                android:stateListAnimator="@null"/>
+
+            <Button android:id="@+id/btn_choice2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="สำรวจห้อง"
+                android:fontFamily="monospace"
+                android:backgroundTint="#333333"
+                android:textColor="#00FF00" />
+
+            <Button android:id="@+id/btn_choice3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="นอนต่อ"
+                android:fontFamily="monospace"
+                android:backgroundTint="#333333"
+                android:textColor="#00FF00" />
+
+            <Button android:id="@+id/btn_choice4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ทางเลือกพิเศษ"
+                android:fontFamily="monospace"
+                android:backgroundTint="#333333"
+                android:textColor="#00FF00" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
