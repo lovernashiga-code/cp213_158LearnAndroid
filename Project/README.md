@@ -153,9 +153,6 @@ Project/
 ├── MetaProgressionSystem.kt   # ระบบ Progression ข้าม Run
 ├── RelicSystem.kt             # ระบบของสะสม
 ├── ModernUI.kt                # UI Components
-    └── data/model/
-    ├── GameModels.kt          # Data Models
-    └── WorldData.kt           # ข้อมูลโลก
 ```
 
 ---
