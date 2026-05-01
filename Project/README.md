@@ -4,14 +4,6 @@
 
 ---
 
-## 📱 Wireframe / UI Design
-
-![Wireframe](docs/wireframe.png)
-
-> ภาพ wireframe แสดงหน้าจอหลักของแอป ได้แก่ Main Menu, Combat, เริ่มการผจญภัย, ตั้งค่า, Achievements และ คู่มือดันเจี้ยน
-
----
-
 ## 📖 อธิบายโปรเจ็กต์
 
 **Dark Abyss** คือเกมแนว **Roguelike RPG** สำหรับ Android ที่เน้นการดำเนินเนื้อเรื่องและการต่อสู้แบบ **Turn-based** (สลับเทิร์น)
@@ -157,5 +149,5 @@ Project/
 
 ---
 
-## 📂 WIREFRAME
+## 📱 Wireframe / UI Desig
 <img width="1414" height="2000" alt="ดีไซน์ที่ยังไม่ได้ตั้งชื่อ" src="https://github.com/user-attachments/assets/191e87f4-f6c2-4e17-8638-084fefa5aa6a" />
